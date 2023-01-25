@@ -1,9 +1,12 @@
-#include <stdio.h>
+#include "../Inc/main.h"
 
 int main (void)
 {
-    while (1)
-    {
 
-    }
+    printf("hello \n");
+
+    // // while (1)
+    // // {
+
+    // }
 }
