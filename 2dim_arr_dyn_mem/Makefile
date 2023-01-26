@@ -8,17 +8,19 @@ SRC_DIR := Src/main.c \
 INC_DIR := Inc/main.h \
 			Inc/second.h
 
-test: $(OBJ_DIR)/$(TARGET).o $(BUILD_DIR)
-		gcc $(OBJ_DIR)/*.o -o $(BUILD_DIR)/$(TARGET)_ex
+all: $(SRC_DIR) $(INC_DIR) $(OBJ_DIR)
+	gcc $(SRC_DIR) -c
+	mv *.o $(OBJ_DIR)
+	make binary
 
-test.o: $(SRC_DIR) $(INC_DIR) $(OBJ_DIR)
-		gcc $(SRC_DIR) -c
-		mv *.o $(OBJ_DIR)
+binary: $(OBJ_DIR)/$(TARGET).o $(BUILD_DIR)
+	gcc $(OBJ_DIR)/*.o -o $(BUILD_DIR)/$(TARGET)_ex
+
 clean: 
-		rm -rf $(OBJ_DIR) $(BUILD_DIR) *.o
+	rm -rf $(OBJ_DIR) $(BUILD_DIR) *.o
 
 $(OBJ_DIR):
-		mkdir $(OBJ_DIR)
+	mkdir $(OBJ_DIR)
 
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
