@@ -4,9 +4,9 @@ TARGET := main
 BUILD_DIR := build
 OBJ_DIR := obj
 SRC_DIR := Src/main.c \
-			Src/second.c
+			Src/string_lib.c
 INC_DIR := Inc/main.h \
-			Inc/second.h
+			Inc/string_lib.h
 
 all: $(SRC_DIR) $(INC_DIR) $(OBJ_DIR)
 	gcc $(SRC_DIR) -c

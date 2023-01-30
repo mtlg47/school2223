@@ -1,6 +1,21 @@
 #include "../Inc/main.h"
 
-int main (void)
+int opt_ty;
+
+int main(void)
 {
-    return 0;
+    start_msg();
+    scanf("%d",&opt_ty);
+
+    switch(opt_ty)
+    {
+        case 1:
+            printf("write num: %d \n", opt_ty);
+        case 2:
+            printf("write num: %d \n", opt_ty);
+        default:
+            printf("Wrong input\n");
+    }
+
+    return(0);
 }
