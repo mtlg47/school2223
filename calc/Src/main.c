@@ -18,19 +18,19 @@ int main(void)
                 switch(math_ty)
                 {
                     case 1:
-                        int_add_msg();
+                        sint_add_msg();
                         break;
                     case 2:
-                        printf("Wrong 2 input\n");
+                        sint_sub_msg();
                         break;
                     case 3:
-                        printf("Wrong 3 input\n");
+                        sint_div_msg();
                         break;
                     case 4:
-                        printf("Wrong 4 input\n");
+                        sint_mul_msg();
                         break;
                     default:
-                        printf("WronfdgS\n");
+                        printf("Wrong input!\n");
                         break;
                 }
                 break;
@@ -38,19 +38,19 @@ int main(void)
                 switch(math_ty)
                 {
                     case 1:
-                        printf("testinput\n");
+                        uint_add_msg();
                         break;
                     case 2:
-                        printf("Wrong 2 input\n");
+                        uint_sub_msg();
                         break;
                     case 3:
-                        printf("Wrong 3 input\n");
+                        uint_div_msg();
                         break;
                     case 4:
-                        printf("Wrong 4 input\n");
+                        uint_mul_msg();
                         break;
                     default:
-                        printf("WronfdgS\n");
+                        printf("Wrong input!\n");
                         break;
                 }
                 break;
@@ -58,7 +58,6 @@ int main(void)
                 printf("Wrong input\n");
                 break;
         }
-        if (shutdown == 9) break;
     }
 
     return 0;

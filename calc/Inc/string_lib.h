@@ -7,6 +7,13 @@
 
 void start_msg(void);
 void operation_msg(void);
-void int_add_msg(void);
+void sint_add_msg(void);
+void sint_sub_msg(void);
+void sint_div_msg(void);
+void sint_mul_msg(void);
+void uint_add_msg(void);
+void uint_sub_msg(void);
+void uint_div_msg(void);
+void uint_mul_msg(void);
 
 #endif //__STRING_LIB_H
